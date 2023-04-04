@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="src/css/bootstrap.min.css">
+		<style>
+			#sobre{
+				background-color: #e48100;
+			}
+			#descricao{
+				background-color: wheat;
+			}
+		</style>
+
+		<title>Portfólio de Christian</title>
+	</head>
+	<body>
+		<section id="sobre">
+			<div class="container py-5 d-flex flex-column align-items-center">
+				<picture class="me-3 mb-4">
+					<img src="src/img/images.jpeg" alt="Foto da minha cara" class="rounded">
+				</picture>
+				<div class="d-flex align-items-center justify-content-around">
+					<div class="bg-success">
+						<ul>
+							<div class="link" data-type="github">
+								<img src="" alt="Github">
+								Github
+							</div>
+						</ul>
+					</div>
+					<div id="descricao" class="py-2 px-4 rounded w-50">
+						<h3>Quem eu sou?</h3>
+						<p>
+							Sou um técnico em programação com o diploma recebido do curso Informática para Internet do IFRN.
+							Atualmente... Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Laudantium sint excepturi quam voluptates modi illum. 
+							Cumque obcaecati architecto at deleniti repellat est eveniet asperiores, 
+							esse ex et pariatur accusamus dignissimos?
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="projetos">
+			<div class="container d-flex p-3">
+				<h2>Projetos</h2>
+				<select name="" id="">
+					<option value="" selected disabled>Selecione uma Linguagem/Framework</option>
+				</select>
+			</div>
+			<div class="container">
+				<ul>
+					<div data-opcoes="[javascript,php,laravel]">
+						<div>
+							<img src="" alt="javascript">
+							<img src="" alt="laravel">
+						</div>
+						<h4>Nome do projeto</h4>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Cumque totam fuga, praesentium at eaque iste soluta excepturi sunt consequuntur possimus! 
+							Commodi dignissimos obcaecati quaerat ullam maiores ab, dolore necessitatibus perspiciatis!
+						</p>
+					</div>
+				</ul>
+			</div>
+		</section>
+	</body>
+	<script src="src/js/bootstrap.bundle.min.js"></script>
+	<script>
+		document.querySelector('.link').addEventListener("click", function(){
+			window.open('https://github.com/Caca404', '_blank').focus();
+		});
+	</script>
+</html>
