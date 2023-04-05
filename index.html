@@ -6,12 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="src/css/bootstrap.min.css">
 		<style>
-			#sobre{
-				background-color: #23272f;
+			@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+			*{
+				font-family: 'Roboto Condensed', sans-serif;
 			}
 			.link{
 				cursor: pointer;
 				width: fit-content;
+			}
+			.card{
+				border: none;
+				border-radius: 2%;
 			}
 			.card-header div{
 				cursor: pointer;
@@ -24,14 +29,27 @@
 				background-color: blueviolet;
 				color: white;
 			}
+			.bg-darker{
+				background-color: #0f131b;
+				color: whitesmoke;
+				box-shadow: 0 0 20px #46464669;
+			}
 			.text-justify{
 				text-align: justify;
+			}
+			#descricao p{
+				font-size: 19px;
+				text-align: justify;
+			}
+			.bg-card-dark{
+				color: white;
+				background-color: #383838;
 			}
 		</style>
 
 		<title>Portfólio de Christian</title>
 	</head>
-	<body>
+	<body class="bg-dark">
 		<section id="sobre">
 			<div class="container py-md-5 py-4 d-flex flex-column align-items-center flex-wrap">
 				<div class="col-8 col-md-3 text-center text-white mb-3">
@@ -41,7 +59,7 @@
 					</picture>
 				</div>
 				<div class="col-12 col-md-9 d-flex flex-column align-items-center justify-content-around">
-					<div id="descricao" class="pb-2 pt-4 px-4 ms-md-3 mt-3 mt-md-0 rounded bg-white">
+					<div id="descricao" class="pb-2 pt-4 px-4 ms-md-3 mt-3 mt-md-0 rounded bg-darker">
 						<h3>Quem eu sou?</h3>
 						<p>
 							Sou um técnico em programação com o diploma recebido do curso Informática para Internet do IFRN.
@@ -65,7 +83,7 @@
 		</section>
 		<section id="projetos" class="p-4">
 			<div class="container">
-				<h2>Projetos</h2>
+				<h2 class="text-white">Projetos</h2>
 				<div class="col-12 col-md-5">
 					<select id="filter" class="form-select">
 						<option value="" selected>Selecione uma Linguagem/Framework</option>
@@ -84,7 +102,7 @@
 			<div class="container mt-4">
 				<div class="row mb-3" id="projetosList">
 					<div class="col-12 col-md-3 mb-3 d-flex align-items-stretch">
-						<div class="card" data-opcoes="php,laravel,api">
+						<div class="card bg-card-dark" data-opcoes="php,laravel,api">
 							<div class="card-header text-center p-0">
 								<div class="bg-danger py-3"
 									onclick="redirect('https:/\/github.com/Caca404/API-LARAVEL-TESTE-CC404')">
@@ -101,7 +119,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-3 mb-3 d-flex align-items-stretch">
-						<div class="card" data-opcoes="asp,javascript,react,api">
+						<div class="card bg-card-dark" data-opcoes="asp,javascript,react,api">
 							<div class="card-header p-0 text-center d-flex justify-content-center">
 								<div class="py-3 bg-purple w-100" 
 									onclick="redirect('https:/\/\github.com/\Caca404/\Gerenciamento-de-Alunos-ASP-CORE/tree/\main/\EscolaAPI')">
@@ -122,7 +140,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-3 mb-3 d-flex align-items-stretch">
-						<div class="card" data-opcoes="typescript,php,laravel,angular">
+						<div class="card bg-card-dark" data-opcoes="typescript,php,laravel,angular">
 							<div class="card-header p-0 text-center d-flex justify-content-center">
 								<div class="bg-danger py-3 w-100"
 									onclick="redirect('https:/\/\github.com/Infowebers-Projects-IFRN-CNAT/Agenda-Ouroboros-Back')">
@@ -144,7 +162,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-3 mb-3 d-flex align-items-stretch">
-						<div class="card" data-opcoes="typescript,angular">
+						<div class="card bg-card-dark" data-opcoes="typescript,angular">
 							<div class="card-header p-0 text-center d-flex justify-content-center">
 								<div class="py-3 w-100" style="background-color: #c3002f;"
 									onclick="redirect('https:/\/\github.com/Caca404/Angular-TESTE-404')">
@@ -160,7 +178,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-3 mb-3 d-flex align-items-stretch">
-						<div class="card" data-opcoes="php,laravel">
+						<div class="card bg-card-dark" data-opcoes="php,laravel">
 							<div class="card-header text-center p-0">
 								<div class="bg-danger py-3"
 									onclick="redirect('https:/\/github.com/Caca404/MindError')">
@@ -177,7 +195,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-3 mb-3 d-flex align-items-stretch">
-						<div class="card" data-opcoes="php,laravel">
+						<div class="card bg-card-dark" data-opcoes="php,laravel">
 							<div class="card-header text-center p-0">
 								<div class="bg-danger py-3"
 									onclick="redirect('https:/\/github.com/Caca404/Mevents')">
