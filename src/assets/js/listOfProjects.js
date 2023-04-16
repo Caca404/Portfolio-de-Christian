@@ -23,7 +23,7 @@ export const listOfProjects = [
     {
         key: 3,
         titulo: 'Agenda Ouroboros', 
-        opcoes: 'typescript,php,laravel,angular',
+        opcoes: 'typescript,php,laravel,angular,api',
         languages: [
             {key: 1, nameIcon: 'fa-laravel', background: 'bg-danger', url: 'https:/\/\github.com/Infowebers-Projects-IFRN-CNAT/Agenda-Ouroboros-Back'},
             {key: 2, nameIcon: 'fa-angular', background: 'bg-angular', url: 'https:/\/\github.com/\Infowebers-Projects-IFRN-CNAT/\Agenda-Ouroboros-Front'}
