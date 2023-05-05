@@ -73,5 +73,19 @@ export const listOfProjects = [
         ],
         nomeRepo: 'Portfolio-de-Christian/commits/main',
         details: "Esse projeto tem como objetivo demonstrar meu conhecimento em Vue, além de apresentar meu outros projetos como programador."
+    },
+    {
+        key: 8,
+        titulo: 'BodyBook',
+        opcoes: 'react,javascript,laravel,php',
+        languages: [
+            {key: 1, nameIcon: 'fa-react text-info', background: 'bg-react', url: 'https:/\/\github.com/\Caca404/\BodyBook'},
+            {key: 2, nameIcon: 'fa-laravel', background: 'bg-danger', url: 'https:/\/\github.com/\Caca404/BodyBookAPI'}
+        ],
+        nomeRepo: [
+            'Caca404/BodyBook',
+            'Caca404/\BodyBookAPI'
+        ],
+        details: 'Esse projeto tem como objetivo criar uma mini rede social de exercícios pelo React Native/Expo, além de receber as informações em conjunto do Axios e Laravel'
     }
 ];
