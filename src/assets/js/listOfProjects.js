@@ -11,7 +11,7 @@ export const listOfProjects = [
     },
     {
         key: 2,
-        titulo: 'Projeto Teste de API com Laravel', 
+        titulo: 'Projeto Teste de API com ASP CORE', 
         opcoes: 'asp,javascript,react,api',
         languages: [
             {key: 1, nameIcon: 'asp', background: 'bg-purple', url: 'https:/\/\github.com/\Caca404/\Gerenciamento-de-Alunos-ASP-CORE/tree/\main/\EscolaAPI'},

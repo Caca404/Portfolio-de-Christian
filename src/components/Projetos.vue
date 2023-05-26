@@ -60,16 +60,25 @@
                 });
             },
             sortCards(){
-                var cards = document.querySelector("#projetosList");
-                const children = [...cards.children];
-                
+                let tentativas = 0;
 
-                children.sort((a, b) => {
-                    return moment(a.querySelector("i[data-date]").dataset.date).isAfter(b.querySelector("i[data-date]").dataset.date) ? -1 : 1;
-                });
-
-                cards.innerHTML = "";
-                children.forEach(item => cards.appendChild(item));
+                while(tentativas < 3){
+                    try{
+                        var cards = document.querySelector("#projetosList");
+                        const children = [...cards.children];
+        
+                        children.sort((a, b) => {
+                            return moment(a.querySelector("i[data-date]").dataset.date).isAfter(b.querySelector("i[data-date]").dataset.date) ? -1 : 1;
+                        });
+        
+                        cards.innerHTML = "";
+                        children.forEach(item => cards.appendChild(item));
+                        break;
+                    }
+                    catch(error){
+                        tentativas++;
+                    }
+                }
             },
             updateCount(){
                 this.countAsync++;
