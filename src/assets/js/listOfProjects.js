@@ -29,8 +29,8 @@ export const listOfProjects = [
             {key: 2, nameIcon: 'fa-angular', background: 'bg-angular', url: 'https:/\/\github.com/\Infowebers-Projects-IFRN-CNAT/\Agenda-Ouroboros-Front'}
         ],
         nomeRepo: [
-            'Infowebers-Projects-IFRN-CNAT/Agenda-Ouroboros-Back',
-            'Infowebers-Projects-IFRN-CNAT/\Agenda-Ouroboros-Front'
+            'Infowebers-Projects-IFRN-CNAT/Agenda-Ouroboros-Back/commits/main',
+            'Infowebers-Projects-IFRN-CNAT/\Agenda-Ouroboros-Front/commits/main'
         ], 
         details: "O projeto tem como objetivo ser uma agenda direcionada para estudantes, os quais precisam organizar o tempo de estudo com o Pomodoro, eventos importantes e calculo de notas. Foi usado Laravel como API e Angular com Typescript como FrontEnd."
     },
@@ -83,8 +83,8 @@ export const listOfProjects = [
             {key: 2, nameIcon: 'fa-laravel', background: 'bg-danger', url: 'https:/\/\github.com/\Caca404/BodyBookAPI'}
         ],
         nomeRepo: [
-            'Caca404/BodyBook',
-            'Caca404/\BodyBookAPI'
+            'Caca404/BodyBook/commits/master',
+            'Caca404/\BodyBookAPI/commits/main'
         ],
         details: 'Esse projeto tem como objetivo criar uma mini rede social de exercícios pelo React Native/Expo, além de receber as informações em conjunto do Axios e Laravel'
     }

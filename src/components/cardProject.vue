@@ -22,7 +22,7 @@
 </template>
 
 <script>
-    export default{
+    export default {
         name: 'CardProject',
         components:{
             headCardProject
@@ -46,7 +46,7 @@
             if(typeof this.nomeRepo == "object"){
                 this.nomeRepo.forEach(async (element, index) => {
                     
-                    await axios.get('https://api.github.com/repos/'+element+'/commits/main')
+                    await axios.get('https://api.github.com/repos/'+element)
                     .then(resp => {
                         this.commitComparation.push(resp.data.commit.author.date);
                     });
