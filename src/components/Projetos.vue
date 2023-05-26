@@ -5,7 +5,6 @@
 
 </script>
 
-
 <template>
     <section id="projetos" class="p-4">
 		<div class="container">
