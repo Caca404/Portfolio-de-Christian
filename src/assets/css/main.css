@@ -1,54 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-	*{
-		font-family: 'Roboto Condensed', sans-serif;
-	}
-	.link{
-		cursor: pointer;
-		width: fit-content;
-	}
-	.card{
-		border: none;
-		border-radius: 2%;
-	}
-	.card-header div{
-		cursor: pointer;
-		transition: transform .2s;
-	}
-	.card-header div:hover {
-		transform: scale(1.1);
-	}
-	.bg-purple{
-		background-color: blueviolet;
-		color: white;
-	}
-	.bg-darker{
-		background-color: #191e25;
-		color: whitesmoke;
-		box-shadow: 0 0 20px #46464669;
-	}
-	.text-justify{
-		text-align: justify;
-	}
-	#descricao p{
-		font-size: 19px;
-		text-align: justify;
-		text-indent: 50px;
-	}
-	.bg-card-dark{
-		color: white;
-		background-color: #383838;
-	}
-	ul{
-		list-style-type: none;
-	}
-	ul li{
-		display: inline !important;
-		padding-right: 20px;
-		float: left;
-	}
-    .bg-react{
-        background-color: #23272f;
-    }
-    .bg-angular{
-        background-color: #c3002f;
-    }
+
+*{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.link{
+	cursor: pointer;
+	width: fit-content;
+}
+.card{
+	border: none;
+	border-radius: 2%;
+}
+.card-header div{
+	cursor: pointer;
+	transition: transform .2s;
+}
+.card-header div:hover {
+	transform: scale(1.1);
+}
+.bg-purple{
+	background-color: blueviolet;
+	color: white;
+}
+.bg-darker{
+	background-color: #191e25;
+	color: whitesmoke;
+	box-shadow: 0 0 20px #46464669;
+}
+.text-justify{
+	text-align: justify;
+}
+#descricao p{
+	font-size: 19px;
+	text-align: justify;
+	text-indent: 50px;
+}
+.bg-card-dark{
+	color: white;
+	background-color: #383838;
+}
+ul{
+	list-style-type: none;
+}
+ul li{
+	display: inline !important;
+	padding-right: 20px;
+	float: left;
+}
+.bg-react{
+	background-color: #23272f;
+}
+.bg-angular{
+	background-color: #c3002f;
+}
