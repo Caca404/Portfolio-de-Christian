@@ -43,10 +43,16 @@
             }
         },  
         async mounted(){
+            let axiosConfig = {
+                headers: {
+                    'Authorization': `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`
+                }
+            };
+
             if(typeof this.nomeRepo == "object"){
                 this.nomeRepo.forEach(async (element, index) => {
-                    
-                    await axios.get('https://api.github.com/repos/'+element)
+
+                    await axios.get('https://api.github.com/repos/'+element, axiosConfig)
                     .then(resp => {
                         this.commitComparation.push(resp.data.commit.author.date);
                     });
@@ -66,7 +72,7 @@
                 });
             }
             else{
-                await axios.get('https://api.github.com/repos/caca404/'+this.nomeRepo)
+                await axios.get('https://api.github.com/repos/caca404/'+this.nomeRepo, axiosConfig)
                 .then(resp => {
                     this.lastCommit = (moment(resp.data.commit.author.date).format('[Ultimo commit foi no dia] DD/MM/YYYY [ás] HH:mm:ss'));
                     this.lastCommitCode = resp.data.commit.author.date;
